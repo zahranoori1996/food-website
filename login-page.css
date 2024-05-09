@@ -53,7 +53,7 @@ div.back-to-home a{
     -o-border-radius: 30px;
 }
 .image-login{
-    background-image: url(../images/happy-pasta.jpg);
+    background-image: url(./images/happy-pasta.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
