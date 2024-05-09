@@ -167,3 +167,14 @@ menu li a {
     margin-right: -8px;
 }
 
+/* food cards */
+
+.food-cards{
+
+}
+.food-cards h3{
+    margin: 10% 0;
+    text-align: center;
+    font-family: merienda;
+    font-size: xx-large;
+}
