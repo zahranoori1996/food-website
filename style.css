@@ -17,7 +17,7 @@
     padding: 0;
     margin: 0;
     color: var(--color-text);
-    background: var(--color-body);
+    /* background: var(--color-body); */
 }
 
 .contanier{
@@ -170,11 +170,58 @@ menu li a {
 /* food cards */
 
 .food-cards{
-
+    margin-bottom: 5%;
 }
 .food-cards h3{
-    margin: 10% 0;
+    margin: 5% 0;
     text-align: center;
     font-family: merienda;
     font-size: xx-large;
+}
+.image-food-card{
+    position: relative;
+    z-index: 2;
+}
+.food-party{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+    margin-bottom: 3%;
+    justify-content: space-around;
+
+}
+.icon-buy{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #000;
+    padding: 4px;
+    border-radius: 8px 8px 20px 8px;
+    border: 1px solid #fff;
+
+}
+.image-product{ 
+    width: 150px;
+}
+.detealis-food-card{
+    background-image:linear-gradient(to right bottom, #f2f2f2, #f0eeef, #fff, #ececec, #f3f1f2);
+    padding: 30% 10% 10% 10%;
+    font-size: 12px;
+    margin-top: -30%;
+    border-radius: 50px 50px 30px 30px;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+    box-shadow: 0 0 10px #bdbdbd;
+    line-height: 20px;
+    width: 125px;
+    height: 100px;
+    
 }
