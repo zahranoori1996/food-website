@@ -39,6 +39,9 @@ body{
 .logo-website{
     flex: 1;
 }
+.logo-website img{
+    width: 50px;
+}
 .list-menu{
     flex: 3;
     font-size: 16px;
