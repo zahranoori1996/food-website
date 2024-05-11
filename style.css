@@ -9,7 +9,7 @@
 :root{
     --color-text:rgb(23, 22, 26);
     --color-orange: #ff2400;
-    --color-body: rgb(221, 240, 255);
+    --color-body: rgb(245, 250, 255);
     --color-white: #fff;
 }
 *{
@@ -17,7 +17,10 @@
     padding: 0;
     margin: 0;
     color: var(--color-text);
-    /* background: var(--color-body); */
+    
+}
+body{
+    background: var(--color-body);
 }
 
 .contanier{
@@ -93,6 +96,9 @@ menu li a {
     cursor: pointer;
     font-size: 1rem;
     text-decoration: none;
+}
+.menu-humberger{
+        
 }
 
 /* style is section .slide */
@@ -225,3 +231,250 @@ menu li a {
     height: 100px;
     
 }
+
+
+/* resposive home page all device */
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (max-width: 1200px) {
+    /* body {background: pink;} */
+    /* navbar */
+    .navbar {
+        padding: 0 3%;
+      }
+    
+     
+      .dark-light-mode button img{
+        height: 41px;
+        vertical-align: bottom;
+      }
+    
+      .shop .sign-up {
+        padding: .7rem 1.7rem;
+       
+      }
+      /* silde & text header */
+      .silde {
+      
+        padding: 0 5%;
+      }
+
+  }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (max-width: 992px) {
+        /* body {background: orange;} */
+
+        .list-menu {
+            flex: 2;
+            font-size: 14px;
+           
+            gap: 5%;
+          }
+        .dark-light-mode button img{
+            height: 40px;
+            vertical-align: bottom;
+          }
+    
+          .shop .sign-up {
+            padding: .6rem 1rem;
+          }
+        /* silde & text header */
+        .information-food h1 {
+            
+            font-size: 3rem;
+            
+          }
+          .button-information {
+            display: flex;
+            margin-top: 5%;
+          }
+          .view-menu , .book-table{
+        
+            padding: .7rem 1.7rem;
+           
+          }
+         
+          .text-reviews {
+
+            font-size: 16px;
+          }
+          .image-users img {
+            width: 40px;
+            border: 2px solid #fff;
+          }
+          .rating-reviews img {
+            width: 18px;
+            
+          }
+        
+      } 
+      
+    /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (max-width: 768px) {
+    /* body {background: rgb(126, 126, 250);} */
+
+    .logo-website {
+        flex: initial;
+        margin-right: 2%;
+      }
+      .list-menu {
+       
+        font-size: 13px;
+        gap: 5%;
+      }
+      .dark-light-mode{
+       
+        flex: initial;
+      }
+      .shop .sign-up {
+        padding: .5rem .5rem;
+      }
+  /* silde & text header */
+        .information-food h1 {
+            
+            font-size: 2.5rem;
+            
+          }
+          .button-information {
+            display: flex;
+            margin-top: 5%;
+          }
+          .view-menu , .book-table{
+        
+            padding: .4rem .7rem;
+           
+          }
+         
+          .text-reviews {
+
+            font-size: 14px;
+          }
+          .image-users img {
+            width: 30px;
+            border: 2px solid #fff;
+          }
+          .rating-reviews img {
+            width: 14px;
+            
+          }
+  } 
+
+
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 600px) {
+    /* body {background: green;} */
+    .navbar{
+        justify-content: space-between;
+    }
+    .menu-humberger{
+
+    }
+    .line-menu{
+        width: 50px;
+        border-bottom: 4px solid #000;
+        margin: 10px 0;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+    .logo-website {
+        flex: initial;
+        margin-right: 2%;
+      }
+      .list-menu {
+        display: none;
+      }
+      .dark-light-mode{
+        display: none;
+       
+      }
+      .shop {
+        display: none;
+      }
+
+      /* slide $ text header */
+      .silde{
+        flex-direction: column;
+    }
+    .information-food{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+  }
+  .information-food h1 {
+    flex: 1;
+    font-size: 2.3rem;
+    
+  }
+   
+    .reviews{
+        display: none;
+    }
+    .view-menu, .book-table {
+        padding: .5rem 1rem;
+        margin: 5%;
+        text-align: center;
+      }
+
+      .button-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+
+      }
+  }
+  
+ 
+ 
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (max-width: 486px) {
+    /* body {background: rgb(162, 210, 78);} */
+    
+    .line-menu{
+        width: 43px;
+        border-bottom: 3px solid #000;
+        margin: 10px 0;
+       
+}
+      /* slide $ text header */
+      .silde{
+        flex-direction: column-reverse;
+    }
+    .information-food{
+        display: flex;
+       
+        width: 100%;
+        flex-direction: column;
+  }
+  .information-food h1 {
+    flex: 1;
+    font-size: 2.3rem;
+    text-align: center;
+  }
+   
+    .reviews{
+        display: none;
+    }
+    .view-menu, .book-table {
+        padding: .5rem 1rem;
+        margin: 5%;
+        text-align: center;
+      }
+
+      .button-information {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+
+      }
+  }
+  
+ 
+
+
