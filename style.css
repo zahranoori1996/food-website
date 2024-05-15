@@ -33,6 +33,7 @@ body{
 
 .contanier{
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding-top: 20px;
 }
@@ -40,23 +41,36 @@ body{
 
 }
 .navbar {
-    display: flex;
-   
+    display: grid;
+    grid-template-columns: 10% 60% 10% 20%;
     align-items: center;
+    
 }
 .logo-website{
-    flex: 1;
+
 }
 .logo-website img{
     width: 50px;
 }
+.menu-nav{
+
+}
+#menu-mobile{
+  cursor: pointer;
+}
+.open-menu-btn{
+  display: none;
+}
+.close-menu-btn{
+  display: none;
+}
 .list-menu{
-    flex: 3;
+    padding: 0 5%;
     font-size: 16px;
     display: flex;
     justify-content: flex-start;
     gap: 10%;
-  
+    width: 400px;
 }
 menu li {
     list-style: none;
@@ -68,7 +82,7 @@ menu li a {
 
 }
 .dark-light-mode{
-    flex: 1;
+    
     display: flex;
     justify-content: center;
 }
@@ -93,7 +107,7 @@ menu li a {
 .shop {
     display: flex;
     gap: 10px;
-    flex: 1;
+    
     justify-content: flex-end;
     align-items: center;
 }
@@ -108,9 +122,7 @@ menu li a {
     font-size: 1rem;
     text-decoration: none;
 }
-.menu-humberger{
-        display: none
-}
+
 
 /* style is section .slide */
 .silde{
@@ -211,6 +223,7 @@ menu li a {
     width: 230px;
     margin-bottom: 3%;
     justify-content: space-around;
+    z-index: -1;
 
 }
 .icon-buy{
@@ -396,6 +409,26 @@ menu li a {
       
         padding: 0 5%;
       }
+      /* menu resturant */
+      .food-list-menu-1 img {
+        width: 250px;
+        bottom: 70px;
+        left: -100px;
+       
+      }
+    
+    .food-list-menu-2 {
+      margin: 15% 0;
+
+    }
+      .food-list-menu-2 img {
+        width: 250px;
+        bottom: 70px;
+        right: -80px;
+    
+    
+      }
+
 
   }
 
@@ -445,7 +478,55 @@ menu li a {
             width: 18px;
             
           }
+        /* menu resturant */
+       
+        .food-list-menu-1 {
+          width: 600px;
+          height: 270px;
+          
         
+        }
+        .food-list-menu-1 img {
+          width: 200px;
+          bottom: 150px;
+          
+        }
+
+        .title-menu-1 {
+          top: -20px;
+          left: 150px;
+          width: 290px;
+          font-size: x-large;
+        }
+        .food-item-1 {
+          padding: 5% 0 0 40%;
+         
+        }
+
+        .food-list-menu-2 {
+          width: 600px;
+          height: 270px;
+          margin: 23% 0;
+        
+        }
+        .food-list-menu-2 img {
+          width: 200px;
+          bottom: 150px;
+          
+        }
+
+        .title-menu-2 {
+          top: -15px;
+          left: 125px;
+          width: 290px;
+          font-size: x-large;
+        }
+        .food-item-2 {
+          padding: 5%;
+         
+        }
+
+
       } 
       
     /* Medium devices (landscape tablets, 768px and up) */
@@ -496,6 +577,56 @@ menu li a {
             width: 14px;
             
           }
+          /* menu resturant */
+       
+        .food-list-menu-1 {
+          width: 500px;
+          height: 270px;
+          
+        
+        }
+        .food-list-menu-1 img {
+          width: 150px;
+          bottom: 150px;
+          border: 30px solid var(--color-body);
+          
+        }
+
+        .title-menu-1 {
+          top: -10px;
+          left: 100px;
+          width: 210px;
+          font-size: large;
+        }
+        .food-item-1 {
+          padding: 5% 0 0 40%;
+         
+        }
+
+        .food-list-menu-2 {
+          width: 500px;
+          height: 270px;
+        
+        }
+        .food-list-menu-2 img {
+          width: 150px;
+          bottom: 150px;
+          border: 30px solid var(--color-body);
+          
+        }
+
+        .title-menu-2 {
+          top: -15px;
+          left: 165px;
+          width: 210px;
+          font-size: large;
+        }
+        .food-item-2 {
+          padding: 5%;
+         
+        }
+
+
   } 
 
 
@@ -503,28 +634,69 @@ menu li a {
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (max-width: 600px) {
     /* body {background: green;} */
+    .contanier{
+      padding-top: 0;
+    }
     .navbar{
+      display: flex;
+      justify-content: space-between;
       
-        justify-content: space-between;
+      line-height:3rem;
+    
+      
     }
 /* responsive mobile show menu */
+.menu-nav{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  
 
+}
+.open-menu-btn,.close-menu-btn {
+  display: block;
+  cursor: pointer;
+  margin: 12px;
+}
+.links-container{
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  
+  width: 200px;
+  height:100vh;
+  background-color: var(--color-orange);
+  box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+  transition: 0.75s ease-out;
+}
+#menu-mobile:checked ~ .links-container{
+  right: 0;
 
+}
 
-
-
+.list-menu{
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
 
 
 
 
 /* end */
     .logo-website {
-        flex: initial;
+        top: 0;
+
+        position: fixed;
         margin-right: 2%;
       }
-      .list-menu {
-        display: none;
-      }
+    
       .dark-light-mode{
         display: none;
        
@@ -536,7 +708,9 @@ menu li a {
       /* slide $ text header */
       .silde{
         flex-direction: column;
-    }
+        margin-top: 15%;
+  }
+    
     .information-food{
         display: flex;
         justify-content: space-between;
@@ -564,9 +738,66 @@ menu li a {
         flex: 1;
 
       }
-  }
+
+      /* menu resturant */
+      /* #main-website{
+        z-index: -2;
+      } */
+      
+      .container-menu {
+        z-index: -3;
+      }
+      .food-list-menu-1 {
+        width: 400px;
+        height: auto;
+        
+      
+      }
+      .food-list-menu-1 img {
+        width: 150px;
+        bottom: 130px;
+        
+      }
+
+      .title-menu-1 {
+        top: -10px;
+        left: 107px;
+        width: 200px;
+        font-size: 1.3rem;
+      }
+      .food-item-1 {
+        padding: 5% 0 0 30%;
+       
+      }
+      .food-item-1 p {
+        
+        gap: 3%;
+      }
+      .food-list-menu-2 {
+        width: 400px;
+        height: auto;
+        margin: 23% 0;
+      
+      }
+      .food-list-menu-2 img {
+        width: 150px;
+        bottom: 130px;
+        
+      }
+
+      .title-menu-2 {
+        top: -10px;
+        left: 40px;
+        width: 240px;
+        font-size: 1.2rem;
+      }
+      
+      .food-item-2 p {
+        gap: 3%;
+      }
   
- 
+  
+    }
  
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (max-width: 486px) {
@@ -609,6 +840,56 @@ menu li a {
         justify-content: center;
         flex: 1;
 
+      }
+
+      /* menu resturant */
+       
+      .text-food-list {
+        text-align: center;
+        font-size: xx-large;
+        padding: 5% 0;
+        margin: 30% 0;
+      }
+      .food-list-menu-1 {
+        width: 90%;
+        height: auto;
+      }
+      .food-list-menu-1 img {
+        width: 20%;
+        top: -30px;
+        border: 10px solid var(--color-body);
+        left: 0;
+      }
+      .title-menu-1 {
+        top: -8px;
+        left: 25%;
+        width: 150px;
+        font-size: .9rem;
+      }
+      .food-item-1 p {
+        
+        font-size: .7rem;
+      }
+      .food-list-menu-2 {
+        width: 90%;
+        height: auto;
+        margin: 20% 0;
+      }
+      .food-list-menu-2 img {
+        width: 20%;
+        right: 0;
+        top: -33px;
+        border: 10px solid var(--color-body);
+      }
+     
+      .title-menu-2 {
+        top: -10px;
+        left: 23%;
+        width: 150px;
+        font-size: .8rem;
+      }
+      .food-item-2 p {
+        font-size: .7rem;
       }
   }
   
