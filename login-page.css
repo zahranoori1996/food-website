@@ -44,7 +44,7 @@ div.back-to-home a{
 }
 .login{
     display: flex;
-    margin: 3% 0;
+    margin: 3% 5%;
     background-color: #6cb7b7;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -79,7 +79,7 @@ div.back-to-home a{
   font-size: 2rem;
 }
 input{
-    padding: 3% 0;
+    padding: 4%;
     width: 100%;
     margin: 2% 0 5% 0;
     border: 0;
@@ -87,6 +87,7 @@ input{
     border-radius: 20px;
 }
 input[type="submit"]{
+    width: 108%;
     margin-top: 5%;
     background-color: #6af571;
     cursor: pointer;
@@ -113,5 +114,7 @@ input:focus{
         flex-direction: column;
         margin: 5%;
     }
-    
+    div.back-to-home a{
+        font-size: 9px;
+    }
 }
