@@ -1,3 +1,4 @@
+// select elements 
 let $ = document;
 let lightModeBtn = $.getElementById("light-btn");
 let darkModeBtn = $.getElementById("dark-btn");
@@ -17,12 +18,13 @@ let loader = $.getElementById("loader");
 let contanier = $.getElementsByClassName("contanier")[0];
 
 
-
+// perload 
 window.addEventListener("load",function(){
     loader.style.display = "none";
     loader.style.transition = "all 1s ease-in-out";
     contanier.style.display = "block"
 })
+// event set dark mode
 imgLight.addEventListener("click",function(){
 
     console.log("dark");
@@ -57,6 +59,8 @@ imgLight.addEventListener("click",function(){
    ;
     });
 });
+
+// event set light mode
 imgDark.addEventListener("click",function(){
     console.log("light");
     $.body.style.background = "#fff";
