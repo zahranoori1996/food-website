@@ -95,6 +95,9 @@ menu li a {
     display: flex;
     justify-content: center;
 }
+.dark-light-mode-mobile{
+  display: none;
+}
 .dark-light-mode button{
     border: 0;
     cursor: pointer;
