@@ -9,6 +9,9 @@
     <title> Italian restaurant</title>
 </head>
 <body>
+    <div id="loader">
+        <img src="./images/loading.svg" alt="">
+    </div>
     <div class="contanier">
         <header class="header-website">
             <!-- navbar -->
@@ -22,7 +25,7 @@
 
                     <input type="checkbox" name="" id="menu-mobile" hidden>
                     <label for="menu-mobile" class="open-menu-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#ff2400"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
                     </label>
                     <div class="links-container">
                         <label for="menu-mobile" class="close-menu-btn">
@@ -41,6 +44,18 @@
                             </li>
                             <li>
                                 <a href="">Contact</a>
+                            </li>
+                            <li>
+                                <div class="dark-light-mode-mobile">
+
+                                    <button id="light-btn">
+                                      <img class="light" src="./images/icons8-sun-48.png" alt="light mode">
+                                    </button>
+                                    <button id="dark-btn">
+                                      <img class="dark" src="./images/icons8-moon-48.png" alt="dark mode">
+                                    </button>
+                                   
+                                  </div>
                             </li>
                         </menu>
                         </div>

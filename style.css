@@ -36,6 +36,15 @@ body{
     width: 100%;
     margin: 0 auto;
     padding-top: 20px;
+    display: none;
+}
+#loader{
+  width: 100vw;
+  height: 100vh;
+  background: #f4f4f4;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .header-website {
 
@@ -816,9 +825,12 @@ button:hover{
         position: fixed;
         margin-right: 2%;
       }
-    
       .dark-light-mode{
         display: none;
+      }
+      .dark-light-mode-mobile{
+        display: flex;
+        justify-content: start;
        
       }
       .shop {

@@ -13,7 +13,16 @@ let boxMenu2 = $.querySelectorAll(".food-list-menu-1");
 let footer = $.getElementById("footer-website");
 let flagDrakLightMode = false;
 
+let loader = $.getElementById("loader");
+let contanier = $.getElementsByClassName("contanier")[0];
 
+
+
+window.addEventListener("load",function(){
+    loader.style.display = "none";
+    loader.style.transition = "all 1s ease-in-out";
+    contanier.style.display = "block"
+})
 imgLight.addEventListener("click",function(){
 
     console.log("dark");
