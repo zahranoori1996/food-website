@@ -30,10 +30,10 @@ imgLight.addEventListener("click",function(){
     console.log("dark");
     $.body.style.background = "#000";
     $.body.style.transition = "all 100ms ease-in-out";
-    imgLight.style.visibility = "hidden";
+    imgLight.style.opacity = ".3";
     imgLight.style.transition = "all 100ms ease-in-out";
     imgDark.style.transition = "all 150ms ease-in-out";
-    imgDark.style.visibility = "visible";
+    imgDark.style.opacity = "1";
     h1Elem.style.color = "#ff2400";
     footer.style.background = "rgb(40, 38, 45)";
 
@@ -65,10 +65,10 @@ imgDark.addEventListener("click",function(){
     console.log("light");
     $.body.style.background = "#fff";
     $.body.style.transition = "all 100ms ease-in-out";
-    imgLight.style.visibility = "visible";
+    imgLight.style.opacity = "1";
     imgLight.style.transition = "all 100ms ease-in-out";
     imgDark.style.transition = "all 150ms ease-in-out";
-    imgDark.style.visibility = "hidden";
+    imgDark.style.opacity = ".3";
     h1Elem.style.color = "rgb(23, 22, 26)";
     footer.style.background = "#faebd7"
    
