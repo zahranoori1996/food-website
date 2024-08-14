@@ -13,11 +13,10 @@ let boxMenu = $.querySelector(".food-list-menu-2");
 let boxMenu2 = $.querySelectorAll(".food-list-menu-1");
 let footer = $.getElementById("footer-website");
 let flagDrakLightMode = true;
-
 let loader = $.getElementById("loader");
 let contanier = $.getElementsByClassName("contanier")[0];
-
-
+let imageShoppingBascket = $.getElementById("image-shop")
+let bookTable = $.getElementById("book-table")
 
 
 // perload 
@@ -29,8 +28,8 @@ window.addEventListener("load",function(){
 // event set dark mode
 function darkModeHandler(){
         flagDrakLightMode = false;
-        console.log(flagDrakLightMode);
-        console.log("dark");
+        // console.log(flagDrakLightMode);
+        // console.log("dark");
         $.body.style.background = "#000";
         $.body.style.transition = "all 100ms ease-in-out";
         imgLight.style.opacity = ".3";
@@ -39,27 +38,29 @@ function darkModeHandler(){
         imgDark.style.opacity = "1";
         h1Elem.style.color = "#ff2400";
         footer.style.background = "rgb(40, 38, 45)";
-    
-        boxMenu.style.border = "3px solid #fff"
+        imageShoppingBascket.setAttribute("src","./images/icons8-shopping-bag-50.png");
+        imageShoppingBascket.style.width = "26px" ;
+        boxMenu.style.border = "3px solid #fff";
         links.forEach(function(link){
-            link.style.color = "#878484";
+            link.style.color = "#000";
             
         });
         spanElem.forEach(function(span){
-            span.style.color = "#878484";
+            span.style.color = "rgb(140, 140, 140)";
           
         });
         pElem.forEach(function(p){
-            p.style.color = "#878484";
+            p.style.color = "#000";
            
         });
         h3Elem.forEach(function(h3){
-            h3.style.color = "#878484";
+            h3.style.color = "#000";
         
         });
         boxMenu2.forEach(function(box){
             box.style.border = "3px solid #fff";
         });
+        bookTable.style.color= "#ff2400"
         isDark()
     
 }
@@ -69,8 +70,8 @@ function darkModeHandler(){
 // event set light mode
 function lightModeHanddler(){
         flagDrakLightMode = true;
-        console.log(flagDrakLightMode);
-        console.log("light");
+        // console.log(flagDrakLightMode);
+        // console.log("light");
         $.body.style.background = "#fff";
         $.body.style.transition = "all 100ms ease-in-out";
         imgLight.style.opacity = "1";
@@ -79,7 +80,9 @@ function lightModeHanddler(){
         imgDark.style.opacity = ".3";
         h1Elem.style.color = "rgb(23, 22, 26)";
         footer.style.background = "#faebd7"
-       
+        imageShoppingBascket.setAttribute("src","./images/icons8-shopping-bag-32.png");
+        imageShoppingBascket.style.width = "32px" ;
+        boxMenu.style.border = "3px solid #000";
         links.forEach(function(link){
             link.style.color = "rgb(23, 22, 26)";
             
@@ -101,9 +104,9 @@ function lightModeHanddler(){
             box.style.border = "3px solid #000";
             
         });
+        bookTable.style.color= "#000";
         isDark()
 }
-
 
 
 function isDark(){
@@ -116,7 +119,7 @@ function isDark(){
 }
 window.onload = function(){
     let localStorageTheme = localStorage.getItem("theme");
-    console.log(localStorageTheme);
+    // console.log(localStorageTheme);
     if(localStorageTheme === "dark"){
         darkModeHandler()
     
