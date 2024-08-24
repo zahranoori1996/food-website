@@ -50,7 +50,7 @@ function darkModeHandler(){
           
         });
         pElem.forEach(function(p){
-            p.style.color = "#fff";
+            p.style.color = "#000";
            
         });
         h3Elem.forEach(function(h3){
