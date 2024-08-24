@@ -42,7 +42,7 @@ function darkModeHandler(){
         imageShoppingBascket.style.width = "26px" ;
         boxMenu.style.border = "3px solid #fff";
         links.forEach(function(link){
-            link.style.color = "#000";
+            link.style.color = "#fff";
             
         });
         spanElem.forEach(function(span){
@@ -50,11 +50,11 @@ function darkModeHandler(){
           
         });
         pElem.forEach(function(p){
-            p.style.color = "#000";
+            p.style.color = "#fff";
            
         });
         h3Elem.forEach(function(h3){
-            h3.style.color = "#000";
+            h3.style.color = "#fff";
         
         });
         boxMenu2.forEach(function(box){
